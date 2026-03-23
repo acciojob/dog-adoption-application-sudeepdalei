@@ -3,11 +3,52 @@
 <html>
 
 <head>
+	<title>Dog Adoption Form</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	<div class="form-container">
+    <h2>Pawsitive Homes Application</h2>
+    <form action="#" method="post">
+        
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
+        </div>
+
+        <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" placeholder="Address" required>
+        </div>
+
+        <div class="form-group checkbox-group">
+            <input type="checkbox" id="checkbox" name="checkbox" value="Have you ever lived with a Dog before?">
+            <label for="checkbox">Have you ever lived with a Dog before?</label>
+        </div>
+
+        <div class="form-group">
+            <label for="multiSelect">Please select your preferred breeds</label>
+            <select id="multiSelect" name="multiSelect" multiple required>
+                <option value="golden_retriever">Golden Retriever</option>
+                <option value="beagle">Beagle</option>
+                <option value="indie">Indie / Mixed Breed</option>
+                <option value="labrador">Labrador</option>
+                <option value="poodle">Poodle</option>
+            </select>
+            <small class="hint">Hold Ctrl (Win) or Cmd (Mac) to select multiple.</small>
+        </div>
+
+        <input type="submit" id="submit" value="Submit">
+
+    </form>
+</div>
     <script type="text/javascript" src="./script.js">
 </script>
 
